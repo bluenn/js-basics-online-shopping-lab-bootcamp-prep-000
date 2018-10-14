@@ -27,6 +27,35 @@ function viewCart() {
      var StringBase = `Your shopping cart is empty.`;
      return StringBase;
    }
+<<<<<<< HEAD
+=======
+
+  var stringBase = `In your cart, you have`;
+  var stringTwo = ``;
+
+  for (var i = 0; i < cart.length; i++){
+    var purchase = cart[i];
+
+      if (cart.length === 1) {
+      stringTwo = `${purchase.itemName} at $${purchase.itemPrice}.`;
+      }
+     else if (cart.length > 1) {
+       var stringThree = ``;
+       if (i < cart.length - 1){
+         stringThree = `,`;
+         stringTwo = `${purchase.itemName} at $${purchase.itemPrice}${stringThree}`;
+       }
+       else {
+         stringThree = `.`;
+       stringTwo = `and ${purchase.itemName} at $${purchase.itemPrice}${stringThree}`;
+       }
+
+     }
+     stringBase = `${stringBase} ${stringTwo}`;
+  }
+  return stringBase;
+}
+>>>>>>> 7fbc5daabd2c6bcc1063f7a2b077b05da5176642
 
   var stringBase = `In your cart, you have`;
   var stringTwo = ``;
