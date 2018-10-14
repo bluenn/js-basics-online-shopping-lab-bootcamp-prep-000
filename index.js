@@ -52,21 +52,10 @@ function viewCart() {
 
   if (cartItems.length > 1) {
   //put and in front of lastItem
-  return `${stringBase} ${itemsBase} and ${lastItem}.`;
+  return `${stringBase} ${itemsBase}, and  ${lastItem}.`;
   }
 }
   viewCart();
-
-
-
-
-
-
-
-
-
-
-
 
 
 
